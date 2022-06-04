@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Count</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+   <div class="box">
+       <div class="head"><h1>People Present In Auditorium</h1></div>
+       <span id="count"><h2>:0</h2></span>
+       <div class="btn">
+           <ul>
+               <li><button class="one" onclick="increment()">INCREMENT</button></li>
+               <li><button class="two" onclick="decrement()">DECREMENT</button></li>
+           </ul>
+       </div>
+   </div>
+</div>
+    <script>
+        let c=0
+        function increment(){
+            c = c+1;
+            document.getElementById("count").innerHTML= ":"+c;
+        }
+        function decrement(){
+            c = c-1
+            document.getElementById('count').innerHTML= ":"+c;
+        }
+        
+    </script>
+</body>
+</html>
+ 
